@@ -1,0 +1,17 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    system("chcp 65001");
+    ifstream file("c:\\1\\cppclion.txt");
+    string s;
+    
+    file >> s;
+    file.close();
+    cout << s << endl;
+    
+    system("pause");
+    return 0;
+}
