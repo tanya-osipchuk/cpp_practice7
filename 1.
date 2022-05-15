@@ -1,9 +1,10 @@
+#include <iostream>
 #include <fstream>
 using namespace std;
 
 int main()
 {
-    ofstream fout("cppclion.txt");
+    ofstream fout("c:\\1\\cppclion.txt");
     fout << "Привет!";
     fout.close();
     system("pause");
