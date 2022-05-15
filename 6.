@@ -1,0 +1,13 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    system("chcp 65001");
+    ifstream fout("c:\\1\\cppclion.txt");
+    string s;
+    fout.seekg(0,ios_base::end);
+    cout << "Размер файла (в байтах): " << fout.tellg();
+    return 0;
+}
