@@ -1,0 +1,11 @@
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    ofstream fout("cppclion.txt");
+    fout << "Привет!";
+    fout.close();
+    system("pause");
+    return 0;
+}
