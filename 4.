@@ -1,0 +1,23 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    system("chcp 65001");
+    ifstream file("c:\\1\\cppclion.txt");
+    string s;
+    int n = 100;
+
+    char* buff = new char[n+1];
+    buff[n] = 0;
+    file.get(buff,n);
+    while (!file.eof()){
+        cout << buff;
+        delete[] buff;
+    }
+    cout << endl;
+    cout << "End of the file";
+    file.close();
+    return 0;
+}
